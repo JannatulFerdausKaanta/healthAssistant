@@ -1,0 +1,108 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+
+    header("Location:user_login.php");
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TDEE Calculator</title>
+    </head>
+
+    <body>
+        <nav align="center">
+            <img class="logo" src="image/logo4.png">
+            
+            </nav> <br>
+            <div align="center">
+            <a href="user_profile.php">My profile</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+               
+               
+               <a class="nav" href="weight_condition.php">Weight Condition</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <a class="nav" href="diet_plan.php">Diet Plan</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <a class="nav" href="doctor_suggestion.php">Doctor Suggestion</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <a class="nav" href="blood_collection.php">Blood Collection</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <a href="logout.php">Logout</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            </div> <br> <br>
+        
+           
+
+
+
+
+        <div id="inputsContainer">
+            <table>
+                <tr style="text-align: center;">
+                    <td>
+                        <h2 align="center">Calculate Your TDEE</h2>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="gender">Gender: </label>
+                        <select id="gender">
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+            
+                        <br/>
+                        <label for="age">Age: </label>
+                        <input type="number" id="age" min="0" max="999" required>
+            
+                        <br/>
+                        <label for="weight">Weight: </label>
+                        <input type="number" id="weight" min="0" max="999" required>
+                        <select id="weightUnit">
+                            <option value="LBS">lbs</option>
+                            <option value="KG">kg</option>
+                        </select>
+            
+                        <br/>
+                        <label for="height">Height: </label>
+                        <input type="number" id="height" min="0" max="999" required>
+                        <select id="heightUnit">
+                            <option value="IN">in</option>
+                            <option value="CM">cm</option>
+                        </select>
+            
+                        <br/>
+                        <label for="activityLevel">Activity Level: </label>
+                        <select id="activityLevel">
+                            <option value="1.2">Sedentary (Office Job)</option>
+                            <option value="1.375">Light Exercise (1-2 days/week)</option>
+                            <option value="1.55">Medium Exercise (3-5 days/week)</option>
+                            <option value="1.725">Heavy Exercise (6-7 days/week)</option>
+                            <option value="1.9">Athlete (2x per day)</option>
+                        </select>
+            
+                        <br/>
+                        <label for="bf">Body Fat % (Optional): </label>
+                        <input type="number" id="bodyFatPercent"  min="0" max="100">%
+                    </td>
+                </tr>
+
+                <tr style="text-align:center">
+                    <td>
+                        <div id="submitBtnBox">
+                            <br/>
+                            <button type="submit" id="submitBtn">Calculate TDEE</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="infoContainer"></div>
+
+        <div id="resultsContainer"></div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #332929;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+    margin-top:15px ;
+    margin-bottom:15px ;
+    margin-left: 5px;
+    margin-right:5px ;
+}       
+.topnav .logo{
+  float: left;
+  display: block;
+  margin-top:8px ;
+  margin-left: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a.nav:hover {
+  background-color: #ff725e;
+  color: white;
+  border-radius: 6px;
+}  
+
+
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  display: inline block;
+}
+
+
+
+.button {
+    background-color: #ff725e;
+    border: none;
+    color: white;
+    padding:12px 11px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom:15px ;
+    margin-left: 10px;
+    margin-right:20px ;
+   
+}
+
+.button2 {
+  background-color: #5033c8;
+  border: none;
+  color: white;
+  padding:12px 11px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px;
+  margin-top:20px ;
+  margin-bottom:15px ;
+  margin-left:;
+  margin-right:20px ;
+ 
+}
+
+.button4 {
+  background-color: #ff725e;
+  border: none;
+  color: white;
+  padding:12px 11px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px;
+  margin-top:20px ;
+  margin-bottom:15px ;
+  margin-left: ;
+  margin-right:20px ;
+ 
+}
+  
+  .button1 {border-radius: 6px;}
+
+
+  .btn {
+    border: 2px solid #5033c8;
+    background-color: white;
+    color: #03045E;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 2px;
+  }
+
+
+  .btn2 {
+    border: 2px solid #ff725e;
+    background-color: white;
+    color: #03045E;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px 2px;
+  }
+
+
+
+ 
+
+ 
+  /* Red */
+.danger {
+    border-color: #5033c8;
+    color: #03045E
+  }
+
+  .danger2 {
+    border-color: #ff725e;
+    color: #03045E
+  }
+  
+  .danger:hover {
+    background: #5033c8;
+    color: white;
+  }
+
+  .danger2:hover {
+    background: #ff725e;
+    color: white;
+  }
+
+
+
+
+  h1{
+    font-size: 38px; 
+    color: #03045E
+    
+ }
+
+ h2{
+  font-size: 35px; 
+  color: #03045E
+  
+}
+
+h3{
+  font-size: 26px; 
+  color: #3a5a80
+  
+  
+}
+ .highlight{
+     font-size: 38px;
+     color: #ff725e;
+ }
+ .half-width{
+     width: 40%;
+     float: left;
+     margin-left: 6%;
+     padding-left: 2%;
+
+ }
+ .half-width img{
+     width: 100%;
+ }
+ .top-banner{
+     background-image: url("images/top-banner.png");
+     background-repeat: no-repeat;
+ }
+ section{
+     height: 500px;
+     padding-bottom: 150px;
+ }
+
+ .para2{
+
+  color: #57779e
+ }
+
+
+ footer p{
+  background-color: #407BFF;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+}
